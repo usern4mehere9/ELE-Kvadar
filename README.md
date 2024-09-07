@@ -19,6 +19,8 @@ Slike su bile čuvane u jpg formatu pod nazivom img1_XXXX.jpg (XXXX predstavlja 
 
 Kamera je postavljena na donju stranu kućišta i programirana da slika na svakih 60 sekundi. Na dan lansiranja, proverena je njena funkcionalnost, a zahvaljujući automatskom fokusu, dodatna podešavanja nisu bila potrebna pre nego što je konačno postavljena u kućište.
 
+Primer slike na dan lansiranja:
+
 ![Primer slike na dan lansiranja](https://github.com/usern4mehere9/LeninRepo/blob/main/1.png)
 
 ### SYS2
@@ -40,7 +42,15 @@ Korišćen je SIM868 GPS/GSM modul za traženje GPS koordinata, i slanje podatak
 
 Prvi broj u poruci predstavlja datum i vreme, zatim karakterom “;” odvojeno idu gps koordinate odvojene zarezima, nakon toga, razdvojeno “;” idu tri komponente žiroskopa, međusobno odvojene zarezima, nakon toga tri komponente očitavanja akselerometra odvojene zarezima, i zatim dva broja odvojena “;” koji predstavljaju pritisak i temperaturu. Primer poruke: *20240808213841.000;44.246743,19.930845,218.326;0.02, 0.05,-0.03;0.89,0.16,9.35;990.2834;25.96*
 
+Primer izgleda poruke:
+
+![Primer izgleda poruke](https://github.com/usern4mehere9/LeninRepo/blob/main/3.png)
+
 Za sys2 namestili smo čuvanje podataka u json fajl, svako novo merenje bilo je upisivano u novu liniju. To nam je bilo značajno jer prilikom gubitka signala (što bi se desilo u svemiru u nekom trenutku, a nama se desilo čak i pri samom poletanju), ipak bismo mogli da dobijemo te podatke čim pronađemo satelit i preuzmemo fajlove sa SD kartice. U fajl su bila upisivana sva merenja, istim redosledom kao što su bila upisivana u poruku. Fajlovi su nazivani kao data_YYYY-MM-DD-HH-MM-SS.json_file.json, tako da su ti datum i vreme u trenutku pokretanja programa.
+
+Primer izgleda fajla u kom su upisivani podaci:
+
+![Primer izgleda fajla u koji su upisivani podaci](https://github.com/usern4mehere9/LeninRepo/blob/main/2.png)
 
 Namešteno je automatsko pokretanje koda i za sys1 i za sys2. Odnosno, ukoliko se u bilo kom trenutku resetuje rpi, kod će odmah ponovo da se pokrene. 
 
@@ -54,6 +64,10 @@ Namešteno je automatsko pokretanje koda i za sys1 i za sys2. Odnosno, ukoliko s
 *	Ipex na SMA adapter 
 
 Sistem je bio napravljen za praćenje Samsung Galaxy SmartTag2 u toku potrage za satelitom. Bilo je planirano da se postavi na dron u toku potrage.
+
+Slika sistema:
+
+![Slika sistema](https://github.com/usern4mehere9/LeninRepo/blob/main/5.png)
 
 U toku rada isečen je trace za integrisanu antenu i odlemljen kondenzator za napajanje, na čije su mesto zalemljene žice iz DC na DC konvertera. 
 

@@ -76,22 +76,3 @@ Slika sistema:
 U toku rada isečen je trace za integrisanu antenu i odlemljen kondenzator za napajanje, na čije su mesto zalemljene žice iz DC na DC konvertera. 
 
 Test je odrađen uz pomoć krana, meren je intenzitet signala u odnosu na udaljenost od odašiljača u inkrementima od 3 metra. Korišćen kran je proizveden od strane KONE proizvođača i ima nosivost od 16 tona. Ima radio komandu (daljinski) koji funkcioniše na oko 2.4Ghz. Takođe su u sklopu testa izmerene i maksimalna, minimalna i average (prosečna) potrošnja koristeći unimer.
-
-* ovo je tacka
- 
-*ovo je iskoseno*
-
-**ovo je bold**
-
-***ovo je bold italic***
-
-~~ovo je precrtano~~
-
->ovo je citat
-
-``` ovo je kod ```
-
-![ovo je opis slike](https://avatars.githubusercontent.com/u/91462628?v=4)
-
-
-ostatak vidi na https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax

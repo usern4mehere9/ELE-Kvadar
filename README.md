@@ -19,6 +19,8 @@ Slike su bile čuvane u jpg formatu pod nazivom img1_XXXX.jpg (XXXX predstavlja 
 
 Kamera je postavljena na donju stranu kućišta i programirana da slika na svakih 60 sekundi. Na dan lansiranja, proverena je njena funkcionalnost, a zahvaljujući automatskom fokusu, dodatna podešavanja nisu bila potrebna pre nego što je konačno postavljena u kućište.
 
+![Primer slike na dan lansiranja](https://github.com/usern4mehere9/LeninRepo/blob/main/1.png)
+
 ### SYS2
 
 **SYS2** sastoji se od: 

@@ -8,7 +8,8 @@ Projekat je rađen na seminaru elektronike u Istraživačkoj stanici Petnica.
 
 **SYS1** sastoji se od: 
 * Raspberry Pi Zero 2W
-* Raspberry Pi Camera Module 3 
+* Raspberry Pi Camera Module 3
+
 Cilj ovog sistema je prikupljanje slika iz svemira. Ovaj system koristi kod capture_images.py.
 Na sys1 nismo zalemili 40-pin GPIO header za Raspberry Pi, jer nam nije bio potreban, pa smo na ovaj način sačuvali na masi celog sistema.
 Slike su bile čuvane u jpg formatu pod nazivom img1_XXXX.jpg (XXXX predstavlja redni broj slike, u 4 cifre, počevši od 0000).  Kada se program restartuje, slike se rewrite-ju, tako da imamo sačuvanu poslednju sliku pod tim istim nazivom.
@@ -22,6 +23,7 @@ Kamera je postavljena na donju stranu kućišta i programirana da slika na svaki
 * BMX160
 * BMP388
 * SIM868 GPS/GSM modul
+
 Cilj ovog sistema je prikupljanje očitavanja senzora, slanje tih podataka kroz poruku i snimanje videa. Koristi kod svepokk.py.
 Videe snima u h264 formatu. Čuva ih pod nazivom YY-MM-DD-HH-MM-SS.h264. Format je h264 zato što za to imamo hardverski enkoder pa je najbrže.
 Kamera je zalepljena na bočnu stranu kućišta satelita. Napravili smo i da nam radi live stream sa kamere na računaru, što je puno pomoglo pri nameštanju fokusa, jer smo pre toga morali da slikamo i otvaramo slike kako bi proveravali da li je dobar. 
@@ -33,11 +35,12 @@ Namešteno je automatsko pokretanje koda i za sys1 i za sys2. Odnosno, ukoliko s
 ## SYS6
 
 **SYS6** sastoji se od: 
-•	Raspberry Pi Zero 2W sa zalemljenim ipex konektorom za antenu 
-•	2 redno vezane litijumske baterije 
-•	Eksterna SMA antena 
-•	DC na DC konverter za stabilno napajanje od 5V 
-•	Ipex na SMA adapter 
+*	Raspberry Pi Zero 2W sa zalemljenim ipex konektorom za antenu 
+*	2 redno vezane litijumske baterije 
+*	Eksterna SMA antena 
+*	DC na DC konverter za stabilno napajanje od 5V 
+*	Ipex na SMA adapter 
+
 Sistem je bio napravljen za praćenje Samsung Galaxy SmartTag2 u toku potrage za satelitom. Bilo je planirano da se postavi na dron u toku potrage.
 U toku rada isečen je trace za integrisanu antenu i odlemljen kondenzator za napajanje, na čije su mesto zalemljene žice iz DC na DC konvertera. 
 Test je odrađen uz pomoć krana, meren je intenzitet signala u odnosu na udaljenost od odašiljača u inkrementima od 3 metra. Korišćen kran je proizveden od strane KONE proizvođača i ima nosivost od 16 tona. Ima radio komandu (daljinski) koji funkcioniše na oko 2.4Ghz. Takođe su u sklopu testa izmerene i maksimalna, minimalna i average (prosečna) potrošnja koristeći unimer.

@@ -38,6 +38,10 @@ Videe snima u h264 formatu. Čuva ih pod nazivom YY-MM-DD-HH-MM-SS.h264. Format 
 
 Kamera je zalepljena na bočnu stranu kućišta satelita. Napravili smo i da nam radi live stream sa kamere na računaru, što je puno pomoglo pri nameštanju fokusa, jer smo pre toga morali da slikamo i otvaramo slike kako bi proveravali da li je dobar. 
 
+Screenshot snimka dobijenog sa satelita:
+
+![Screenshot snimka dobijenog sa satelita](https://github.com/usern4mehere9/LeninRepo/blob/main/6.png)
+
 Korišćen je SIM868 GPS/GSM modul za traženje GPS koordinata, i slanje podataka putem poruke pomoću GSM modula. GPS je testiran više puta. Nakon prvih testiranja po stanici dobijali smo tačnu lokaciju sa greškom od ~6m. Koordinate su stizale na laptop pa je naknadno napisan kod da podaci dolaze na SMS svakih 60 sekundi. Za pravilno funkcionisanje i postizanje potrebne preciznosti bilo je neophodno obavljati testiranja na otvorenom prostoru, s obzirom da uređaj ne radi u zatvorenom. 
 
 Prvi broj u poruci predstavlja datum i vreme, zatim karakterom “;” odvojeno idu gps koordinate odvojene zarezima, nakon toga, razdvojeno “;” idu tri komponente žiroskopa, međusobno odvojene zarezima, nakon toga tri komponente očitavanja akselerometra odvojene zarezima, i zatim dva broja odvojena “;” koji predstavljaju pritisak i temperaturu. Primer poruke: *20240808213841.000;44.246743,19.930845,218.326;0.02, 0.05,-0.03;0.89,0.16,9.35;990.2834;25.96*

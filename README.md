@@ -40,7 +40,7 @@ Kamera je zalepljena na bočnu stranu kućišta satelita. Napravili smo i da nam
 
 Screenshot snimka dobijenog sa satelita:
 
-![Screenshot snimka dobijenog sa satelita](https://github.com/usern4mehere9/LeninRepo/blob/main/6.png)
+![Screenshot snimka dobijenog sa satelita](https://github.com/usern4mehere9/LeninRepo/blob/main/6.jpg)
 
 Korišćen je SIM868 GPS/GSM modul za traženje GPS koordinata, i slanje podataka putem poruke pomoću GSM modula. GPS je testiran više puta. Nakon prvih testiranja po stanici dobijali smo tačnu lokaciju sa greškom od ~6m. Koordinate su stizale na laptop pa je naknadno napisan kod da podaci dolaze na SMS svakih 60 sekundi. Za pravilno funkcionisanje i postizanje potrebne preciznosti bilo je neophodno obavljati testiranja na otvorenom prostoru, s obzirom da uređaj ne radi u zatvorenom. 
 

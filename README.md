@@ -1,6 +1,10 @@
 # ELE Kvadar
 Projekat "Lansiranje ele kvadra" predstavlja lansiranje malog satelita meteorološkim balonom do visine od 30 km. Cilj je prikupljati podatke, kao što su temperatura, radijacija i atmosferski pritisak. Satelit se zatim na zemlju vraca pomoću padobrana. Dalji procesi ukljucuju nalazenje satelita i analiziranje snimljenih podataka kao i njihovo uporedjivanje sa proslim poznatim rezultatima zvanicnih merenja.
 
+Slika satelita u vazduhu:
+
+![Satelit u vazduhu](https://github.com/usern4mehere9/LeninRepo/blob/main/8.png)
+
 Projekat je rađen na seminaru elektronike u Istraživačkoj stanici Petnica.
 
 ## Software

@@ -41,7 +41,7 @@ encoder = H264Encoder()
 
 uart = serial.Serial("/dev/serial0", baudrate=115200, timeout=1) # inicializacija UART za GPS/GSM/BT[ne koristi se]
 
-broj_telefona ="0628594496" #Broj telefona za prijemnu stanicu na zemlji
+broj_telefona ="0000000000" #Broj telefona za prijemnu stanicu na zemlji
 
 def init_gsm(pin="1111"):	 #funkcija za inicalizaciju gsm koja ukljucuje modul -> proverava da li se ukljucio -> otkljucava sim katricu
     
